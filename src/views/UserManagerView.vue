@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-    <div>
+    <div class='usermanager'>
         <h4>User Manager</h4>
             
         <table>
@@ -23,12 +23,10 @@ export default {
                 </tr>
             </thead>
             <tbody>
-                <li v-for="item in users">
-                    <tr>
-                        <td>{{ item.name }}</td>
-                        <td>{{ item.role }}</td>
-                    </tr>
-                </li>
+                <tr v-for="item in users">
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.role }}</td>
+                </tr>
             </tbody>
         </table>
     </div>
@@ -38,6 +36,10 @@ export default {
 
 th, td {
     border: 1px solid black;
+}
+
+.usermanager {
+    padding: 50px;
 }
 
 </style>
