@@ -4,23 +4,27 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header>
-    <div>
-      <nav>
-        <h1>Vue ERP</h1>
-        <RouterLink to="/">Home</RouterLink>
-      </nav>
+    <div class='wrapper'>
+        <nav>
+            <h1>Vue ERP</h1>
+            <RouterLink to="/">Home</RouterLink>
+            <RouterLink to="/users">Users</RouterLink>
+        </nav>
+        <RouterView />
     </div>
   </header>
-
-  <RouterView />
 </template>
 
 <style scoped>
 nav {
-    width: 100vw;
-    height: 20vh;
+    width: 10vw;
+    height: 100vh;
     font-size: 12px;
     text-align: left;
     background-color: rgba(0, 0, 0, 0.1);
+}
+
+.wrapper {
+    display: flex;
 }
 </style>
