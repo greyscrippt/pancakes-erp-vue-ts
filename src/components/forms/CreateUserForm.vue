@@ -9,7 +9,10 @@ const role = ref();
 
 <template>
     <div>
-        <h3>Username</h3> <input type="text" v-model="username">
-        <h3>Role</h3> <input type="text" v-model="role">
+        <h3>Username</h3>
+        <input type="text" v-model="username">
+        
+        <h3>Role</h3>
+        <input type="text" v-model="role">
     </div>
 </template>
