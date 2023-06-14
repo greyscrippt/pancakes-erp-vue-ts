@@ -7,9 +7,11 @@ import { RouterLink, RouterView } from 'vue-router'
     <div class='wrapper'>
         <nav>
             <h1>Vue ERP</h1>
-
-            <li><RouterLink to="/">Home</RouterLink></li>
-            <li><RouterLink to="/users">Users</RouterLink></li>
+            
+            <ul>
+                <li><RouterLink to="/">Home</RouterLink></li>
+                <li><RouterLink to="/users">Users</RouterLink></li>
+            </ul>
         </nav>
         <RouterView />
     </div>
@@ -27,6 +29,11 @@ nav {
 
 a {
     padding: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
 .wrapper {
