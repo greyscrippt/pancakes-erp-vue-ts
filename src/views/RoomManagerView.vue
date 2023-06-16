@@ -13,7 +13,7 @@ const rooms = ref([
 </script>
 
 <template>
-  <div class="usermanager">
+  <div>
     <h4>Room Manager</h4>
 
     <button class='primary' @click="showModal = true">Add</button>
@@ -65,9 +65,5 @@ th,
 td {
   border: 1px solid black;
   margin: 0;
-}
-
-.usermanager {
-  padding: 50px;
 }
 </style>

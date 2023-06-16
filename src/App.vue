@@ -24,9 +24,11 @@ import { RouterLink, RouterView } from 'vue-router';
 
 <style scoped>
 nav {
+  display: flex;
   margin: 20px;
-  width: 10vw;
-  height: 100vh;
+  margin-bottom: 5px;
+  width: calc(100vw - 80px);
+  height: 10vh;
   font-size: 12px;
   text-align: left;
   background-color: slategray;
@@ -40,11 +42,14 @@ a {
 }
 
 ul {
+  display: flex;
   list-style-type: none;
   padding: 0;
 }
 
 .wrapper {
   display: flex;
+  flex-direction: column;
+  width: calc(100vw - 80px);
 }
 </style>

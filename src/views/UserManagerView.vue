@@ -13,7 +13,7 @@ const users = ref([
 </script>
 
 <template>
-  <div class="usermanager">
+  <div>
     <h4>User Manager</h4>
 
     <button class='primary' @click="showModal = true">Add</button>
@@ -67,7 +67,4 @@ td {
   margin: 0;
 }
 
-.usermanager {
-  padding: 50px;
-}
 </style>
