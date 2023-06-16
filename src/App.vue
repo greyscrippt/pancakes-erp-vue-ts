@@ -9,9 +9,9 @@ import { RouterLink, RouterView } from 'vue-router';
         <h1>ERP</h1>
 
         <ul>
-          <li><RouterLink to="/">Home</RouterLink></li>
-          <li><RouterLink to="/users">Users</RouterLink></li>
-          <li><RouterLink to="/rooms">Rooms</RouterLink></li>
+          <li><RouterLink active="active-link" to="/">Home</RouterLink></li>
+          <li><RouterLink active="active-link" to="/users">Users</RouterLink></li>
+          <li><RouterLink active="active-link" to="/rooms">Rooms</RouterLink></li>
         </ul>
       </nav>
 
@@ -28,7 +28,7 @@ nav {
   margin: 20px;
   margin-bottom: 5px;
   width: calc(100vw - 80px);
-  height: 10vh;
+  height: fit-content;
   font-size: 12px;
   text-align: left;
   background-color: slategray;
@@ -38,13 +38,23 @@ nav {
 }
 
 a {
-  padding: 15px;
+  margin: 0 0 0 30px;
+  text-align: bottom;
+}
+
+.active-link {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  margin: 0 30px 0 0;
 }
 
 ul {
   display: flex;
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .wrapper {

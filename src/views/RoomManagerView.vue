@@ -46,7 +46,7 @@ const rooms = ref([
       </thead>
       <tbody>
         <tr v-for="item in rooms">
-          <td>{{ item.name }}</td>
+          <td class='table-cell-one'>{{ item.name }}</td>
           <td>{{ item.isOccupied ? 'Yes' : 'No' }}</td>
           <td><button class='primary'>View</button></td>
           <td><button class='secondary'>Delete</button></td>
@@ -58,12 +58,24 @@ const rooms = ref([
 
 <style scoped>
 table {
+  width: 100%;
   text-align: left;
+  margin-top: 15px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 5px;
 }
 
-th,
-td {
-  border: 1px solid black;
+th, td {
   margin: 0;
+  padding: 15px;
+}
+
+td {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.table-cell-one {
+  width: 100%;
 }
 </style>
