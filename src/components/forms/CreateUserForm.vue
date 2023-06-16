@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { ref } from 'vue';
 
-const username = ref()
-const role = ref()
+const username = ref();
+const role = ref();
 </script>
 
 <template>

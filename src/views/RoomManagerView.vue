@@ -1,22 +1,22 @@
 <script setup lang="ts">
-import Modal from '../components/ModalComponent.vue'
-import CreateRoomForm from '../components/forms/CreateRoomForm.vue'
+import Modal from '../components/ModalComponent.vue';
+import CreateRoomForm from '../components/forms/CreateRoomForm.vue';
 
-import { ref } from 'vue'
+import { ref } from 'vue';
 
-const showModal = ref(false)
+const showModal = ref(false);
 
 const rooms = ref([
   { name: 'Das Auto', isOccupied: true },
   { name: 'Herr Osvald', isOccupied: false }
-])
+]);
 </script>
 
 <template>
   <div class="usermanager">
     <h4>Room Manager</h4>
 
-    <button @click="showModal = true">Add</button>
+    <button class='primary' @click="showModal = true">Add</button>
 
     <Teleport to="body">
       <Modal :show="showModal" @close="showModal = false">
@@ -29,8 +29,8 @@ const rooms = ref([
         </template>
 
         <template #footer>
-          <button @click="showModal = false">Cancel</button>
-          <button @click="showModal = false">Confirm</button>
+          <button class='primary' @click="showModal = false">Cancel</button>
+          <button class='secondary' @click="showModal = false">Confirm</button>
         </template>
       </Modal>
     </Teleport>
@@ -48,8 +48,8 @@ const rooms = ref([
         <tr v-for="item in rooms">
           <td>{{ item.name }}</td>
           <td>{{ item.isOccupied ? 'Yes' : 'No' }}</td>
-          <td><button>View</button></td>
-          <td><button>Delete</button></td>
+          <td><button class='primary'>View</button></td>
+          <td><button class='secondary'>Delete</button></td>
         </tr>
       </tbody>
     </table>
