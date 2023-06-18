@@ -17,6 +17,28 @@ button:hover {
   transition: ease-in-out 200ms;
 }
 
+table {
+  width: 100%;
+  text-align: left;
+  margin-top: 15px;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+  margin: 0;
+  padding: 15px;
+}
+
+td {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.table-cell-one {
+  width: 100%;
+}
+
 .page {
   background-color: white;
   padding: 50px;

@@ -41,9 +41,9 @@ const props = defineProps({
 }
 
 .modal-container {
-  width: 800px;
+  width: fit-content;
   margin: auto;
-  padding: 20px 30px;
+  padding: 60px;
   background-color: #fff;
   border-radius: 2px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);

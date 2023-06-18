@@ -29,8 +29,11 @@ const rooms = ref([
         </template>
 
         <template #footer>
-          <button class='primary' @click="showModal = false">Cancel</button>
-          <button class='secondary' @click="showModal = false">Confirm</button>
+          <div class='modal-buttons'>
+            <button class='primary' @click="showModal = false">Cancel</button>
+            <div class='modal-buttons-separator' />
+            <button class='secondary' @click="showModal = false">Confirm</button>
+          </div>
         </template>
       </Modal>
     </Teleport>
@@ -57,25 +60,14 @@ const rooms = ref([
 </template>
 
 <style scoped>
-table {
+
+
+.modal-buttons {
+  display: flex;
   width: 100%;
-  text-align: left;
-  margin-top: 15px;
-  border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.3);
-  padding: 5px;
 }
 
-th, td {
-  margin: 0;
-  padding: 15px;
-}
-
-td {
-  background-color: rgba(255, 255, 255, 1);
-}
-
-.table-cell-one {
-  width: 100%;
+.modal-buttons-separator {
+  width: 8px;
 }
 </style>

@@ -38,7 +38,7 @@ const users = ref([
     <table>
       <thead>
         <tr>
-          <th>Name</th>
+          <th class='table-cell-one'>Name</th>
           <th>Role</th>
           <th />
           <th />
@@ -55,16 +55,3 @@ const users = ref([
     </table>
   </div>
 </template>
-
-<style scoped>
-table {
-  text-align: left;
-}
-
-th,
-td {
-  border: 1px solid black;
-  margin: 0;
-}
-
-</style>

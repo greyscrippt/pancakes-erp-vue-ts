@@ -40,6 +40,15 @@ nav {
 a {
   margin: 0 0 0 30px;
   text-align: bottom;
+  text-decoration: none;
+  background-color: white;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+a:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  transform: translateY(5px);
 }
 
 .active-link {
