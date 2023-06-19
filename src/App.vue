@@ -6,13 +6,21 @@ import { RouterLink, RouterView } from 'vue-router';
   <header>
     <div class="wrapper">
       <nav>
-        <h1>ERP</h1>
+        <div class='navbar-start'>
+          <h1>ERP</h1>
 
-        <ul>
-          <li><RouterLink active="active-link" to="/">Home</RouterLink></li>
-          <li><RouterLink active="active-link" to="/users">Users</RouterLink></li>
-          <li><RouterLink active="active-link" to="/rooms">Rooms</RouterLink></li>
-        </ul>
+          <ul>
+            <li><RouterLink active="active-link" to="/">Home</RouterLink></li>
+            <li><RouterLink active="active-link" to="/users">Users</RouterLink></li>
+            <li><RouterLink active="active-link" to="/rooms">Rooms</RouterLink></li>
+          </ul>
+        </div>
+        <div class='navbar-end'>
+          <div class='profile-wrapper'>
+            <h4>Username</h4>
+            <img class='profile-picture' width='30' height='30' src='https://static.vecteezy.com/system/resources/previews/008/442/086/original/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg' />
+          </div>
+        </div>
       </nav>
 
       <div class="page">
@@ -25,6 +33,8 @@ import { RouterLink, RouterView } from 'vue-router';
 <style scoped>
 nav {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 20px;
   margin-bottom: 5px;
   width: calc(100vw - 80px);
@@ -71,4 +81,40 @@ ul {
   flex-direction: column;
   width: calc(100vw - 80px);
 }
+
+.navbar-start {
+  display: flex;
+  width: 100%;
+}
+
+.navbar-end {
+  display: flex;
+}
+
+.profile-wrapper {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-picture {
+  margin-left: 10px;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+}
+
+.profile-picture:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 180ms;
+  cursor: pointer;
+}
+
+.profile-picture:active {
+  transform: scale(0.9);
+  transition: ease-in-out 50ms;
+}
+
 </style>
