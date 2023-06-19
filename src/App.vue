@@ -5,22 +5,10 @@ import NavbarComponent from './components/NavbarComponent.vue'
 
 <template>
   <header>
-    <div class="wrapper">
-      <NavbarComponent />
+    <NavbarComponent />
 
-      <div class="page">
-        <RouterView />
-      </div>
+    <div class="page">
+      <RouterView />
     </div>
   </header>
 </template>
-
-<style scoped>
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  width: calc(100vw - 80px);
-}
-
-</style>

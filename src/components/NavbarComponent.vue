@@ -1,3 +1,7 @@
+<script setup lang='ts'>
+import { RouterLink } from 'vue-router';
+</script>
+
 <template>
   <nav>
     <div class="navbar-start">
@@ -23,7 +27,7 @@
   </nav>
 </template>
 
-<style>
+<style scoped>
 nav {
   display: flex;
   justify-content: center;
