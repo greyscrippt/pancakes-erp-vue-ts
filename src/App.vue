@@ -6,7 +6,7 @@ import { RouterLink, RouterView } from 'vue-router';
   <header>
     <div class="wrapper">
       <nav>
-        <div class='navbar-start'>
+        <div class="navbar-start">
           <h1>ERP</h1>
 
           <ul>
@@ -15,10 +15,15 @@ import { RouterLink, RouterView } from 'vue-router';
             <li><RouterLink active="active-link" to="/rooms">Rooms</RouterLink></li>
           </ul>
         </div>
-        <div class='navbar-end'>
-          <div class='profile-wrapper'>
+        <div class="navbar-end">
+          <div class="profile-wrapper">
             <h4>Username</h4>
-            <img class='profile-picture' width='30' height='30' src='https://static.vecteezy.com/system/resources/previews/008/442/086/original/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg' />
+            <img
+              class="profile-picture"
+              width="30"
+              height="30"
+              src="https://static.vecteezy.com/system/resources/previews/008/442/086/original/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg"
+            />
           </div>
         </div>
       </nav>
@@ -116,5 +121,4 @@ ul {
   transform: scale(0.9);
   transition: ease-in-out 50ms;
 }
-
 </style>
