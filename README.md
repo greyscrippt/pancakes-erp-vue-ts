@@ -1,46 +1,29 @@
-# vue-erp-ts
+# Pancakes ERP
 
-This template should help get you started developing with Vue 3 in Vite.
+Software for managing lodging businesses.
 
-## Recommended IDE Setup
+## Design Principles
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- It should be blazingly fast, even under a weak network
+- It should be modular and flexible, allowing for quick changes
+- Each process should require as few steps as possible
 
-## Type Support for `.vue` Imports in TS
+## Small To-Do
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+- [ ] Create component for 'Page'
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+## General To-Do
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-yarn
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-yarn dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-yarn build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-yarn lint
-```
+- [ ] User management system
+- [ ] Login
+- [ ] Registration
+- [ ] Access control
+- [ ] Dashboard
+- [ ] Room reservation management system
+- [ ] Inventory and asset management system
+- [ ] Guest management system
+- [ ] Revenue management system
+- [ ] Employee management system
+- [ ] Accounting and billing system
+- [ ] Reporting and analytics system
+- [ ] Integration with external services (e.g. booking engines, payment gateways, marketing channels).
