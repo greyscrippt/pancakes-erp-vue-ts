@@ -10,15 +10,31 @@ Software for managing lodging businesses.
 
 ## Small To-Do
 
-- [ ] Create component for 'Page'
+### Styling
+
+- [ ] Create a CSS style for 'Page'
+
+### Pages
+
+- [x] Room management
+- [ ] Staff management
+- [ ] Role management
+- [ ] Inventory and asset manager
+- [ ] Account registration
+- [ ] Account login
+- [ ] Settings
+- [ ] Edit profile
+- [ ] Billing
+- [ ] Subscription plan
 
 ## General To-Do
 
 - [ ] User management system
-- [ ] Login
-- [ ] Registration
-- [ ] Access control
-- [ ] Dashboard
+- [ ] Staff management system
+- [ ] Login system
+- [ ] Registration system
+- [ ] Access control to restricted pages
+- [ ] Dashboard page
 - [ ] Room reservation management system
 - [ ] Inventory and asset management system
 - [ ] Guest management system
