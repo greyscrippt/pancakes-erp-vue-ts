@@ -16,7 +16,7 @@ const rooms = ref([
   <div>
     <h4>Room Manager</h4>
 
-    <button class='primary' @click="showModal = true">Add</button>
+    <button class="primary" @click="showModal = true">Add</button>
 
     <Teleport to="body">
       <Modal :show="showModal" @close="showModal = false">
@@ -29,10 +29,10 @@ const rooms = ref([
         </template>
 
         <template #footer>
-          <div class='modal-buttons'>
-            <button class='primary' @click="showModal = false">Cancel</button>
-            <div class='modal-buttons-separator' />
-            <button class='secondary' @click="showModal = false">Confirm</button>
+          <div class="modal-buttons">
+            <button class="primary" @click="showModal = false">Cancel</button>
+            <div class="modal-buttons-separator" />
+            <button class="secondary" @click="showModal = false">Confirm</button>
           </div>
         </template>
       </Modal>
@@ -49,25 +49,12 @@ const rooms = ref([
       </thead>
       <tbody>
         <tr v-for="item in rooms">
-          <td class='table-cell-one'>{{ item.name }}</td>
+          <td class="table-cell-one">{{ item.name }}</td>
           <td>{{ item.isOccupied ? 'Yes' : 'No' }}</td>
-          <td><button class='primary'>View</button></td>
-          <td><button class='secondary'>Delete</button></td>
+          <td><button class="primary">View</button></td>
+          <td><button class="secondary">Delete</button></td>
         </tr>
       </tbody>
     </table>
   </div>
 </template>
-
-<style scoped>
-
-
-.modal-buttons {
-  display: flex;
-  width: 100%;
-}
-
-.modal-buttons-separator {
-  width: 8px;
-}
-</style>

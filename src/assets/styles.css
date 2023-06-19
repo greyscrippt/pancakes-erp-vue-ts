@@ -26,7 +26,8 @@ table {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-th, td {
+th,
+td {
   margin: 0;
   padding: 15px;
 }
@@ -54,4 +55,13 @@ td {
 
 .secondary {
   background-color: #ff4444;
+}
+
+.modal-buttons-separator {
+  width: 8px;
+}
+
+.modal-buttons {
+  display: flex;
+  width: 100%;
 }

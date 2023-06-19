@@ -16,7 +16,7 @@ const users = ref([
   <div>
     <h4>User Manager</h4>
 
-    <button class='primary' @click="showModal = true">Add</button>
+    <button class="primary" @click="showModal = true">Add</button>
 
     <Teleport to="body">
       <Modal :show="showModal" @close="showModal = false">
@@ -29,8 +29,11 @@ const users = ref([
         </template>
 
         <template #footer>
-          <button class='primary' @click="showModal = false">Cancel</button>
-          <button class='secondary' @click="showModal = false">Confirm</button>
+          <div class="modal-buttons">
+            <button class="primary" @click="showModal = false">Cancel</button>
+            <div class="modal-buttons-separator" />
+            <button class="secondary" @click="showModal = false">Confirm</button>
+          </div>
         </template>
       </Modal>
     </Teleport>
@@ -38,7 +41,7 @@ const users = ref([
     <table>
       <thead>
         <tr>
-          <th class='table-cell-one'>Name</th>
+          <th class="table-cell-one">Name</th>
           <th>Role</th>
           <th />
           <th />
@@ -48,8 +51,8 @@ const users = ref([
         <tr v-for="item in users">
           <td>{{ item.name }}</td>
           <td>{{ item.role }}</td>
-          <td><button class='primary'>View</button></td>
-          <td><button class='secondary'>Delete</button></td>
+          <td><button class="primary">View</button></td>
+          <td><button class="secondary">Delete</button></td>
         </tr>
       </tbody>
     </table>
