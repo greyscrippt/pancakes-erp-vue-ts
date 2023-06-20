@@ -8,6 +8,23 @@ Software for managing lodging businesses.
 - It should be modular and flexible, allowing for quick changes
 - Each process should require as few steps as possible
 
+## Tab Hierarchy
+
+- Guesthouse Management
+   - Reservation Management
+   - Inventory Management
+   - Accounting and Financial Management
+   - Guest Management
+   - Housekeeping and Maintenance
+
+ - Operations Management
+   - Logistics Management
+   - Flight and Transportation Tracking
+   - Outsourcing Order Management
+
+Analytics and Reporting
+    Reporting and Analytics
+
 ## Small To-Do
 
 ### Styling
