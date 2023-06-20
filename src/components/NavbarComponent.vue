@@ -1,11 +1,14 @@
 <script setup lang='ts'>
 import { RouterLink } from 'vue-router';
+
+import ProfileOptionsComponent from './ProfileOptionsComponent.vue'
 </script>
 
 <template>
   <nav>
     <div class="navbar-start">
-      <h1>ERP</h1>
+      <img class='navbar-title-icon' src='https://i.pinimg.com/originals/52/60/1a/52601a56340f49dbedb019704f12f7db.png'/>
+      <h1>Pancakes</h1>
 
       <ul>
         <li><RouterLink active="active-link" to="/">Home</RouterLink></li>
@@ -22,6 +25,7 @@ import { RouterLink } from 'vue-router';
           height="30"
           src="https://static.vecteezy.com/system/resources/previews/008/442/086/original/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg"
         />
+        <ProfileOptionsComponent />
       </div>
     </div>
   </nav>
@@ -46,17 +50,18 @@ nav {
 
 
 a {
-  margin: 0 0 0 30px;
+  margin: 0 0 0 10px;
   text-align: bottom;
   text-decoration: none;
   background-color: white;
   padding: 8px;
-  border-radius: 4px;
+  border-radius: 50px 50px 50px 50px;
 }
 
 a:hover {
   background-color: rgba(255, 255, 255, 0.7);
-  transform: translateY(5px);
+  transform: translateY(3px);
+  transition: ease-in-out 100ms;
 }
 
 .active-link {
@@ -64,6 +69,7 @@ a:hover {
 }
 
 h1 {
+  font-size: 40px;
   margin: 0 30px 0 0;
 }
 
@@ -74,6 +80,12 @@ ul {
   margin: 0;
 }
 
+ul li {
+  display: flex;
+  
+  align-items: center;
+}
+
 .navbar-start {
   display: flex;
   width: 100%;
@@ -81,6 +93,12 @@ ul {
 
 .navbar-end {
   display: flex;
+}
+
+.navbar-title-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 8px;
 }
 
 .profile-wrapper {
