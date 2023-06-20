@@ -22,8 +22,8 @@ Software for managing lodging businesses.
    - Flight and Transportation Tracking
    - Outsourcing Order Management
 
-Analytics and Reporting
-    Reporting and Analytics
+ - Analytics and Reporting
+   - Reporting and Analytics
 
 ## Small To-Do
 
