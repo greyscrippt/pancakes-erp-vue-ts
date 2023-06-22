@@ -11,9 +11,9 @@ import ProfileOptionsComponent from './ProfileOptionsComponent.vue'
       <h1>Pancakes</h1>
 
       <ul>
-        <li><RouterLink active="active-link" to="/">Home</RouterLink></li>
-        <li><RouterLink active="active-link" to="/users">Users</RouterLink></li>
-        <li><RouterLink active="active-link" to="/rooms">Rooms</RouterLink></li>
+        <li><RouterLink active="active-link" to="/app">Dashboard</RouterLink></li>
+        <li><RouterLink active="active-link" to="/app/users">Users</RouterLink></li>
+        <li><RouterLink active="active-link" to="/app/rooms">Rooms</RouterLink></li>
       </ul>
     </div>
     <div class="navbar-end">
