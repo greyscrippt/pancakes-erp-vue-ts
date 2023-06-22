@@ -15,7 +15,7 @@
         </div>
 
         <div class='buttons-wrapper'>
-          <button class='buttons secondary'>Cancel</button>
+          <button class='buttons secondary'>Back</button>
           <div class='break' />
           <button class='buttons primary'>Login</button>
         </div>
