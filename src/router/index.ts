@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue';
 import UserManagerView from '../views/UserManagerView.vue';
 import RoomManagerView from '../views/RoomManagerView.vue';
 import LoginView from '../views/LoginView.vue';
+import RegisterView from '../views/RegisterView.vue';
 import ApplicationView from '../views/ApplicationView.vue';
 import DashboardView from '../views/DashboardView.vue';
 
@@ -16,6 +17,10 @@ const router = createRouter({
     {
       path: '/login',
       component: LoginView,
+    },
+    {
+      path: '/register',
+      component: RegisterView,
     },
     {
       path: '/app',
